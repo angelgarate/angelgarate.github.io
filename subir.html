@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="php" href="subirvideo.php">
+  <title>Subir Videos</title>
+  <style>
+       /* Estilos generales */
+       body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    /* Estilos para el botón de agregar video */
+    input[type="file"] {
+      display: none;
+    }
+    label {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+    }
+    /* Estilos para el botón de subir video */
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      border: none;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="tu_archivo_de_procesamiento.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="video" id="video" accept="video/*">
+      <label for="video">Agregar Video</label>
+      <input type="submit" value="Subir Video" name="submit">
+    </form>
+  </div>
+</body>
+</html>

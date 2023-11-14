@@ -1,0 +1,65 @@
+/* Reset de estilos */
+html, body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about, .services, .benefits {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
